@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "Pre-commit Build & Test",
+  "description": "在每次提交前自动运行编译和测试，确保代码质量",
+  "version": "1",
+  "when": {
+    "type": "promptSubmit"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "If the user is about to commit code or asking for a commit message, remind them to first run: 1) go build ./... to verify compilation, 2) go test ./... to verify all tests pass, 3) gofmt -l . to verify formatting. Only suggest the commit message after these pass."
+  }
+}

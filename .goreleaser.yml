@@ -1,0 +1,45 @@
+version: 2
+
+project_name: tcl
+
+builds:
+  - main: ./cmd/tcl
+    binary: tcl
+    env:
+      - CGO_ENABLED=0
+    ldflags:
+      - -s -w -X github.com/tcl-eaglelab/tcl-smart-home-cli/cmd.version={{ .Version }}
+    goos:
+      - linux
+      - darwin
+      - windows
+    goarch:
+      - amd64
+      - arm64
+    ignore:
+      - goos: windows
+        goarch: arm64
+
+archives:
+  - formats:
+      - tar.gz
+    format_overrides:
+      - goos: windows
+        formats:
+          - zip
+    name_template: "{{ .ProjectName }}-{{ .Version }}-{{ .Os }}-{{ .Arch }}"
+    wrap_in_directory: false # scripts/install.js expects binary at archive root
+    files:
+      - none*
+
+checksum:
+  name_template: checksums.txt
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - "^chore:"
+      - "^ci:"
+      - "^docs:"
+      - "^test:"

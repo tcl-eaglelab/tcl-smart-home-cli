@@ -1,0 +1,47 @@
+{
+  "name": "@tcl-eaglelab-01/smart-home-cli",
+  "version": "1.0.0",
+  "description": "The official CLI for TCL Smart Home — manage smart home devices from the terminal",
+  "keywords": [
+    "tcl",
+    "smart-home",
+    "iot",
+    "cli",
+    "ai-agent",
+    "device-control"
+  ],
+  "author": "TCL Honghu Lab",
+  "homepage": "https://github.com/tcl-eaglelab/tcl-smart-home-cli#readme",
+  "bugs": {
+    "url": "https://github.com/tcl-eaglelab/tcl-smart-home-cli/issues"
+  },
+  "bin": {
+    "tcl": "scripts/run.js"
+  },
+  "scripts": {
+    "postinstall": "node scripts/install.js"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tcl-eaglelab/tcl-smart-home-cli.git"
+  },
+  "license": "MIT",
+  "files": [
+    "scripts/install.js",
+    "scripts/run.js",
+    "skills/",
+    "CHANGELOG.md"
+  ]
+}

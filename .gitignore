@@ -1,0 +1,33 @@
+# Binary
+/tcl
+/tcl.exe
+*.exe
+dist/
+tmp/
+bin/
+
+# Node
+node_modules/
+package-lock.json
+
+# Test
+*.test
+coverage.out
+*.coverprofile
+
+# IDE
+.vscode/
+.idea/
+.cursor/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.*
+
+# Config (sensitive)
+config.json
