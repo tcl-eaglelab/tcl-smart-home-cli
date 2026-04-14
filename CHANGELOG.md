@@ -1,6 +1,6 @@
 # Changelog
 
-## v1.0.0 (2026-04-12)
+## v1.0.2 (2026-04-14)
 
 The first open-source release of **TCL Smart Home CLI** — the official command-line tool for [TCL Smart Home](https://www.tcl.com/).
 

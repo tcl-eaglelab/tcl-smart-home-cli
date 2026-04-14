@@ -1,6 +1,6 @@
 ---
 name: tcl-smart-home
-version: 1.0.0
+version: 1.0.2
 description: "TCL 智能家居 CLI — 通过终端控制空调、冰箱、洗衣机等设备。支持设备列表查询、状态查询、物模型查看和属性控制。当用户需要查看 TCL 设备、查询设备状态、控制智能家居设备时触发。"
 metadata:
   requires:
