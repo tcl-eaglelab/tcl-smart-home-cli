@@ -1,1 +1,0 @@
-Temporary CI verification for main branch rules. This draft PR will be closed without merging.
