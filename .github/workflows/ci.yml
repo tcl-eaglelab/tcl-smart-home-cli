@@ -9,6 +9,8 @@ on:
 
 jobs:
   build:
+    env:
+      GOFLAGS: ${{ matrix.os == 'macos-latest' && matrix.go-version == '1.22' && '-ldflags=-linkmode=external' || '' }}
     strategy:
       fail-fast: false
       matrix:
